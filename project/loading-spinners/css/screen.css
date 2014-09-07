@@ -218,7 +218,7 @@ input.radiobutton1,input.radiobutton2, input.radiobutton3, input.radiobutton4, i
 	transform: scale(1,1);
 	opacity: 1;
 }
-.sourcecode1, .sourcecode2{
+.sourcecode1, .sourcecode2,.sourcecode3,.sourcecode4,.sourcecode5{
 	visibility: hidden;
 	-webkit-transform: scale(0,0);
 	transform: scale(0,0);
