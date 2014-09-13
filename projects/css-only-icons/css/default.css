@@ -1,0 +1,513 @@
+* {
+	padding: 0;
+	margin: 0;
+	position: relative;
+	font-family: arial "verdana" sans-serif;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+
+
+/*---- Page Layout -----*/
+html, body, .page {
+	width: 100%;
+	height: 100%;
+}
+.page {
+	padding-left: 200px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.page-content { width: 100%; min-height: 100%;}
+.page-sidebar{
+	width: 200px;
+	min-height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+
+/*---- Page Controls -----*/
+input[type="radio"] { display: none;}
+.page-content .article { display: none; }
+
+#show-article1:checked ~ .page .article1 { display: block; }
+#show-article2:checked ~ .page .article2 { display: block; }  
+#show-article3:checked ~ .page .article3 { display: block; }  
+#show-article4:checked ~ .page .article4 { display: block; }  
+#show-article5:checked ~ .page .article5 { display: block; }  
+#show-article6:checked ~ .page .article6 { display: block; }  
+#show-article7:checked ~ .page .article7 { display: block; }  
+#show-article8:checked ~ .page .article8 { display: block; }  
+#show-article9:checked ~ .page .article9 { display: block; }  
+#show-article10:checked ~ .page .article10 { display: block; }  
+#show-article11:checked ~ .page .article11 { display: block; }  
+/*---- // Page Controls -----*/
+
+
+
+/*---- Page Sidebar ----*/
+.page-sidebar { background:#72b4aa; }
+.main-list{
+	list-style-type: none;
+	text-align: center;
+}
+.main-list li {
+	width: 100%;
+	background-color: #72b4aa;
+}
+.main-list li label {
+	padding: 20px;	
+	width: 100%;
+	color: #fff;
+	background-color: #72b4aa;
+	border:1px solid transparent;
+	border-bottom-color: #68AD9D;
+	display: block;	
+}
+.main-list li:hover label { cursor: pointer; }
+.main-list li label:after {
+	content: '';
+	height: 100%;
+	width: 10px;
+	top: -1px;
+	right: 0;
+	background-color: #72b4aa;
+	position: absolute;
+	border:1px solid transparent;
+	border-bottom-color: #68AD9D;
+	transition: all .3s ease-out;
+}
+
+#show-article1:checked ~ .page .main-list li .label-after1:after{ right: -10px;}
+#show-article2:checked ~ .page .main-list li .label-after2:after{ right: -10px;}
+#show-article3:checked ~ .page .main-list li .label-after3:after{ right: -10px;}
+#show-article4:checked ~ .page .main-list li .label-after4:after{ right: -10px;}
+#show-article5:checked ~ .page .main-list li .label-after5:after{ right: -10px;}
+#show-article6:checked ~ .page .main-list li .label-after6:after{ right: -10px;}
+#show-article7:checked ~ .page .main-list li .label-after7:after{ right: -10px;}
+#show-article8:checked ~ .page .main-list li .label-after8:after{ right: -10px;}
+#show-article9:checked ~ .page .main-list li .label-after9:after{ right: -10px;}
+#show-article10:checked ~ .page .main-list li .label-after10:after{ right: -10px;}
+#show-article11:checked ~ .page .main-list li .label-after11:after{ right: -10px;}
+/*---- // Page Sidebar ----*/
+
+
+
+
+/*----- Page Content -----*/
+.page-content {
+	text-align: center;
+	padding: 20px;
+	background: #fff;
+}
+/*----- // Page Content -----*/
+
+
+.page-content .article{
+	padding-top: 40px;
+}
+
+
+
+
+
+
+
+/*---- Home Icon----*/
+.icon-home{
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+}
+.icon-home:before,.icon-home:after{
+	content: '';
+	position: absolute;
+	display: inline-block;
+	height: 50%;
+}
+.icon-home:before{
+	width: 80%;
+	top: 50%;
+	left: 10%;
+	background: -webkit-gradient(linear, left top, left bottom, 
+						color-stop(0%,rgba(50,50,50,1)), 
+						color-stop(40%,rgba(50,50,50,1)), 
+						color-stop(41%,rgba(255,255,255,0)), 
+						color-stop(100%,rgba(255,255,255,0))),
+	 			-webkit-gradient(linear, left top, right top, 
+						color-stop(0%,rgba(50,50,50,1)), 
+						color-stop(26%,rgba(50,50,50,1)), 
+						color-stop(29%,rgba(255,255,255,0)), 
+						color-stop(100%,rgba(255,255,255,0))),
+				-webkit-gradient(linear, left top, right top, 
+						color-stop(0%,rgba(255,255,255,0)), 
+						color-stop(71%,rgba(255,255,255,0)), 
+						color-stop(74%,rgba(50,50,50,1)), 
+						color-stop(100%,rgba(50,50,50,1)));
+}
+.icon-home:after{
+	top: -35%;
+	left: 7%;
+	height: 80%;
+	width: 90%;
+	box-sizing:border-box;
+	border:21px solid transparent;
+	border-bottom-color: #333;
+}
+/*---- Home Icon----*/
+
+
+
+
+
+/*---- Search Icon ----*/
+span.icon-search{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+
+.icon-search:before, .icon-search:after{
+	content: "";
+	position: absolute;
+	display: block;
+}
+.icon-search:before{
+	width: 60%;
+	height: 60%;
+	top: 10%;
+	left: 10%;
+	border-radius: 50%;
+	box-shadow: inset 0px 0px 0px 6px #333;
+	box-sizing:border-box;
+}
+
+.icon-search:after{
+	background-color: #333;
+	width: 1%;
+	height: 38%;
+	top:52%;
+	left: 65%;
+	border:4px solid #333;
+	border-top: 0;
+	transform:rotate(-45deg);
+}
+/*---- //Search Icon----*/
+
+
+
+
+/*---- Edit icon ----*/
+.icon-edit{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+.icon-edit:before, .icon-edit:after{
+	position: absolute;
+	display: block;
+	content: '';
+}
+.icon-edit:before{
+	width: 60%;
+	height: 20%;
+	top: 32%;
+	left: 30%;
+	background: -webkit-gradient(linear, left top, right top, color-stop(75%, #333),
+				color-stop(76%,transparent), color-stop(81%, transparent),
+				color-stop(81%, #333));
+	transform:rotate(-45deg);
+}
+.icon-edit:after{
+	width: 25%;
+	height: 25%;
+	top: 60%;
+	left: 15%;
+	transform:rotate(45deg);
+	border: 6px solid transparent;
+	box-sizing:border-box;
+	border-top-color: #333;
+}
+/*---- //Edit icon ----*/
+
+
+
+/*---- Menu Icon ----*/
+.icon-menu{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+
+.icon-menu:before{
+	content: '';
+	position: absolute;
+	display: block;
+	background-color: #333;
+	width: 70%;
+	height: 10%;
+	border-radius: 5px;
+	top: 20%;
+	left: 15%;
+	box-shadow: 0 10px 0 0 #333, 0 20px 0 0 #333;
+}
+/*---- //Menu Icon ----*/
+
+
+/*---- Like Icon ----*/
+.icon-like {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+.icon-like:before, .icon-like:after {
+	position: absolute;
+	content: "";
+	width:40%;
+	height: 64%;
+	background: #2C2C2C;
+	border-radius: 20px 20px 0 0;
+	transform: rotate(-45deg);
+	transform-origin: 0 100%;
+	top: 17%;
+}
+.icon-like:after {
+	left: 12%;
+	transform: rotate(45deg);
+	transform-origin: 100% 100%;
+}
+/*---- //Like Icon ----*/
+
+
+
+/*---- Delete Icon ----*/
+.icon-delete{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+.icon-delete:before, .icon-delete:after{
+	content: '';
+	position: absolute;
+	display: inline-block;
+}
+.icon-delete:before{
+	width: 60%;
+	height: 60%;
+	background: -webkit-gradient(linear, left top, right top, 
+						color-stop(0%,#333), 
+						color-stop(20%,#333), 
+						color-stop(20%,transparent), 
+						color-stop(40%,transparent), 
+						color-stop(40%,#333), 
+						color-stop(60%,#333), 
+						color-stop(60%,transparent), 
+						color-stop(80%,transparent), 
+						color-stop(80%,#333), 
+						color-stop(100%,#333)),
+				-webkit-gradient(linear,left bottom, left top, color-stop(0%,#333),
+						color-stop(25%,#333),color-stop(25%,transparent),
+						color-stop(25%,transparent));
+	top: 20%;
+	left: 20%;
+	border-bottom-right-radius: 15%;
+	border-bottom-left-radius: 15%;
+}	
+
+.icon-delete:after{
+	height: 25%;
+	width: 60%;
+	top: -10%;
+	left: 20%;
+	background:	-webkit-gradient(linear,left bottom, left top, color-stop(0%,#333),
+						color-stop(50%,#333),color-stop(50%,transparent),
+						color-stop(100%,transparent)),
+				-webkit-gradient(linear, left top, right top, 
+						color-stop(0%,transparent), 
+						color-stop(25%,transparent), 
+						color-stop(25%,#333), 
+						color-stop(75%,#333), 
+						color-stop(75%,transparent), 
+						color-stop(100%,transparent));
+				
+
+}
+/*---- //Delete Icon ----*/
+
+
+
+/*---- Setting Icon ----*/
+.icon-setting{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+
+.icon-setting:after, .icon-setting:before{
+	content: '';
+	display: inline-block;
+	position: absolute;
+
+}
+.icon-setting:after {
+	width: 50%;
+	height: 50%;
+	border: 2px dashed #333;
+	border-radius: 50%;
+	top: 25%;
+    left: 10%;
+	-webkit-box-shadow: inset 0 0 0 4px #333;
+	box-shadow: inset 0 0 0 4px #333;
+}
+
+.icon-setting:before {
+	top: 10%;
+	left: 60%;
+	width: 30%;
+	height: 30%;
+	border: 1px dashed #333;
+	border-radius: 50%;
+	-webkit-box-shadow: inset 0 0 0 3px #333;
+	box-shadow: inset 0 0 0 3px #333;
+}
+/*---- //Setting Icon ----*/
+
+
+
+/*---- Location Icon ----*/
+.icon-location{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+.icon-location:before,.icon-location:after{
+	content: '';
+	position: absolute;
+	display: block;
+}
+
+.icon-location:before{
+	width: 30%;
+	height: 30%;
+	top: 2%;
+	left: 25%;	
+	background-color: transparent;
+	border: 5px solid #333;
+	border-radius: 50%;
+}
+
+.icon-location:after{
+	width: 20%;
+	height: 40%;
+	top: 45%;
+	left: 30%;
+	border: 0px solid transparent;
+	border-top-color: #333;
+	border-width: 25px 10px 25px 10px;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	box-sizing:border-box;
+}
+/*---- //Location icon ----*/
+
+
+
+
+/*---- Play icon ----*/
+.icon-play{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+
+.icon-play:before{
+	content: '';
+	position: absolute;
+	width: 80%;
+	height: 80%;
+	top: 10%;
+	left: 30%;
+	border: 20px solid transparent;
+	display: block;
+	border-left-color: #333;
+	box-sizing: border-box;
+}
+/*---- //Play icon ----*/
+
+
+
+
+/*---- Lock icon ----*/
+.icon-lock{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}		
+.icon-lock:before,.icon-lock:after{
+	content: '';
+	position: absolute;
+	display: inline-block;
+	top: 5%;
+}
+.icon-lock:before{
+	left: 28%;
+	height: 20%;
+	width: 24%;
+	border: 5px solid #333;
+	border-bottom: 0;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+.icon-lock:after{
+	height: 50%;
+	width: 70%;
+	background-color: #333;
+	top: 35%;
+	left: 15%;
+	border-radius: 15%;
+	background: -webkit-gradient(linear,left top, left bottom, color-stop(0%,#333),
+						color-stop(25%,#333),color-stop(26%,transparent),color-stop(30%,transparent),
+						color-stop(30%,#333),color-stop(50%,#333),color-stop(51%,transparent),
+						color-stop(55%,transparent),color-stop(55%,#333),color-stop(30%,#333));
+	
+}
+/*---- //Lock icon ----*/
+
+
+
+
+/*---- Share icon ----*/
+.icon-share{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+.icon-share:after, .icon-share:before{
+	content: '';
+	position: absolute;
+	display: block;
+	top: 25%;
+}
+
+.icon-share:after{
+	left: 40%;
+	height: 50%;
+	width: 50%;
+	box-shadow: inset 3px 3px 0 0 #333;
+	transform:rotate(-45deg);
+	box-sizing:border-box;
+}
+
+.icon-share:before{
+	top: 13%;
+	left: 55%;
+	height: 20%;
+	width: 20%;
+	background-color: #333;
+	border-radius: 100%;
+	box-shadow: -13px 13px 0 0 #333, 0px 26px 0 0 #333;
+}
