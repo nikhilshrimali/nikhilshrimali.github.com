@@ -494,27 +494,27 @@
 }
 /* line 1, ../scss/_footer.scss */
 .footer {
-  background-color: #51688B;
   display: block;
   text-align: center;
 }
-/* line 5, ../scss/_footer.scss */
+/* line 4, ../scss/_footer.scss */
 .footer ul {
   list-style-type: none;
+  height: 100px;
+  padding-top: 20px;
 }
-/* line 7, ../scss/_footer.scss */
+/* line 8, ../scss/_footer.scss */
 .footer ul li {
   display: inline-block;
   padding: 0 10px;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
-  line-height: 100px;
 }
 /* line 14, ../scss/_footer.scss */
 .footer ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #333;
   opacity: .3;
 }
 /* line 19, ../scss/_footer.scss */
