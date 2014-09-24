@@ -1,0 +1,168 @@
+$pro-clr: #98C5E9;
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic,300,700);
+
+@mixin large-text {
+    font: {
+        family: Arial;
+        size: 20px;
+        weight: bold;
+    }
+    color: #ff0000;
+}
+.pg-work-content {
+    width: 100%;
+    height: auto;
+    label {
+        font-size: 48px;
+        text-align: center;
+        display: block;
+        color:#333;
+        padding:50px 0;
+    }
+}
+.main-pro-work {
+
+}
+.project-one {
+    height:200px;
+    margin-bottom:50px;
+    padding-right:25px;
+    a {
+        height:100%;
+        width:100%;
+        background-color:$pro-clr;
+        display:block;
+        padding-right:25px;
+        position:relative;
+        transition:all .3s linear;
+        &:after {
+            content:'Loading Spinners';
+            position:absolute;
+            display:block;
+            height:25%;
+            width:100%;
+            bottom:0;
+            left:0;
+            background-color:rgba(#111, .2);
+            color:#fff;
+            text-align:center;
+            line-height:50px;
+        }
+    }
+    a:hover {
+        transform:translateY(-5px);
+    }
+}
+.project-two {
+    height:200px;
+    margin-bottom:50px;
+    padding-left:25px;
+    a {
+        height:100%;
+        width:100%;
+        background-color:$pro-clr;
+        display:block;
+        position:relative;
+        transition:all .3s linear;
+        &:after{
+            content:'CSS3 Icons';
+            position:absolute;
+            display:block;
+            height:25%;
+            width:100%;
+            bottom:0;
+            left:0;
+            background-color:rgba(#111, .2);
+            text-align:center;
+            line-height:50px;
+            color:#fff;
+        }
+    }
+    a:hover {
+        transform:translateY(-5px);
+    }
+}
+.project-three {
+    height:200px;
+    margin-bottom:50px;
+    padding-right:25px;
+    a {
+        height:100%;
+        width:100%;
+        background-color:$pro-clr;
+        display:block;
+        position:relative;
+        transition:all .3s linear;
+
+        &:after{
+            content:'Real Estate Website Design';
+            position:absolute;
+            display:block;
+            height:25%;
+            width:100%;
+            bottom:0;
+            left:0;
+            background-color:rgba(#111, .2);
+            text-align:center;
+            line-height:50px;
+            color:#fff;
+        }
+    }
+    a:hover{
+        transform:translateY(-5px);
+
+    }
+}
+.project-four {
+    height:200px;
+    margin-bottom:50px;
+    padding-left:25px;
+    a {
+        height:100%;
+        width:100%;
+        background-color:$pro-clr;
+        display:block;
+        position:relative;
+        transition:all .3s linear;
+        &:after{
+            content:'3D-Experiment';
+            position:absolute;
+            display:block;
+            height:25%;
+            width:100%;
+            bottom:0;
+            left:0;
+            background-color:rgba(#111, .2);
+            text-align:center;
+            line-height:50px;
+            color:#fff;
+        }
+    }
+    a:hover{
+        transform:translateY(-5px);
+    }
+}
+
+@media screen and (max-width:768px){
+    .project-one{
+        width:100%;
+        padding-right:0;
+        display:block;
+    }
+    .project-two{
+        width:100%;
+        padding-left:0;
+        display:block;
+    }
+    .project-three{
+        width:100%;
+        padding-right:0;
+        display:block;
+    }
+    .project-four{
+        width:100%;
+        padding-left:0;
+        display:block;
+    }
+
+}
