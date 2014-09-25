@@ -27,15 +27,14 @@ $color-pink: #FD6CA3;
             color: #fff;
             @include border-radius(2px);
             background-color: $color-pink;
-        }
+            a {
+                color:#fff;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
         li:hover {
             background-color: darken($color-pink, 5%);
             cursor: pointer;
-            a {
-                color:#fff;
-                text-decoration:none;
-                text-transform: uppercase;
-            }
         }
     }
 }
