@@ -59,12 +59,12 @@ $color-pink: #FD6CA3;
         }
     }
 
-    @media screen and (max-width:768px){
-        .pg-hdr-menu{
+    @media screen and (max-width:768px) {
+        .pg-hdr-menu {
             width: 100%;
             text-align: center;
-            ul{
-                li{
+            ul {
+                li {
                     float: none;
                     margin: 0 auto;
                     display: inline-block;
