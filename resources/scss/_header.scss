@@ -6,7 +6,7 @@ $color-pink: #FD6CA3;
     background:  url('../images/hdr-bg-4.jpg');
     background-position: center;
     background-size: cover;
-    .pg-hdr-tint{
+    .pg-hdr-tint {
         height: 100%;
         width: 100%;
         background-color: rgba(#51688B, 0.6);
@@ -38,37 +38,23 @@ $color-pink: #FD6CA3;
             }
         }
     }
-    .pg-hdr-abt {
-        position: relative;
-        height: auto;
-        top: 40%;
-        text-align: center;
-        h1 {
-            font-size: 58px;
-            font-family:  'Roboto Condensed', sans-serif;
-            font-weight: 900;
-            color: #fff;
-            text-shadow: 2px 2px 0 rgba(0,0,0,0.3);
-        }
-        h4 {
-            padding-top: 10px;
-            font-family:  'Roboto Condensed', sans-serif;
-            color: #fff;
-            font-size: 20px;
-            font-style: italic;
-        }
+}
+.pg-hdr-abt {
+    position: relative;
+    top: 40%;
+    text-align: center;
+    h1 {
+        font-size: 58px;
+        font-family:  'Roboto Condensed', sans-serif;
+        font-weight: 900;
+        color: #fff;
+        text-shadow: 2px 2px 0 rgba(0,0,0,0.3);
     }
-
-    @media screen and (max-width:768px) {
-        .pg-hdr-menu {
-            width: 100%;
-            text-align: center;
-            ul {
-                li {
-                    float: none;
-                    margin: 0 auto;
-                    display: inline-block;
-                }
-            }
-        }
+    h4 {
+        padding-top: 10px;
+        font-family:  'Roboto Condensed', sans-serif;
+        color: #fff;
+        font-size: 20px;
+        font-style: italic;
     }
+}
