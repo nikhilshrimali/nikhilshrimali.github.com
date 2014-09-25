@@ -22,8 +22,6 @@ $color-pink: #FD6CA3;
         list-style-tyoe: none;
         li {
             float: left;
-            font-size:  14px;
-            text-transform: uppercase;
             padding: 10px;
             margin-right: 50px;
             color: #fff;
@@ -36,6 +34,7 @@ $color-pink: #FD6CA3;
             a {
                 color:#fff;
                 text-decoration:none;
+                text-transform: uppercase;
             }
         }
     }
