@@ -30,9 +30,13 @@ $color-pink: #FD6CA3;
             @include border-radius(2px);
             background-color: $color-pink;
         }
-        li:hover{
+        li:hover {
             background-color: darken($color-pink, 5%);
             cursor: pointer;
+            a {
+                color:#fff;
+                text-decoration:none;
+            }
         }
     }
 }
