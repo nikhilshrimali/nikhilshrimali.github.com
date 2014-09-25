@@ -32,7 +32,7 @@ $color-pink: #FD6CA3;
                 text-decoration: none;
                 text-transform: uppercase;
             }
-        li:hover {
+            li:hover {
             background-color: darken($color-pink, 5%);
             cursor: pointer;
         }
@@ -71,4 +71,5 @@ $color-pink: #FD6CA3;
             }
         }
     }
+}
 }
