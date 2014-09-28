@@ -14,10 +14,10 @@ $color-pink: #FD6CA3;
 }
 .pg-hdr-menu {
     position: absolute;
-    top: 20px;
-    right: 0;
-    width: auto;
+    top: 50%;
+    left: 45%;
     height: 50px;
+
     ul {
         list-style-tyoe: none;
         li {
@@ -31,6 +31,7 @@ $color-pink: #FD6CA3;
                 color:#fff;
                 text-decoration: none;
                 text-transform: uppercase;
+                word-spacing: 5px;
             }
             li:hover {
                 background-color: darken($color-pink, 5%);
@@ -55,6 +56,59 @@ $color-pink: #FD6CA3;
         font-family:  'Roboto Condensed', sans-serif;
         color: #fff;
         font-size: 20px;
-        font-style: italic;
+        font-weight: lighter;
+        text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
     }
+}
+
+@media screen and ( max-width: 320px) {
+    .pg-hdr-menu {
+        position: absolute;
+        top: 00%;
+        left: 45%;
+        height: 50px;
+
+        ul {
+            list-style-tyoe: none;
+            li {
+                float: left;
+                padding: 10px;
+                margin-right: 50px;
+                color: #fff;
+                @include border-radius(2px);
+                background-color: $color-pink;
+                a {
+                    color:#fff;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    word-spacing: 5px;
+                }
+                li:hover {
+                    background-color: darken($color-pink, 5%);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .pg-hdr-abt {
+        position: relative;
+        top: 40%;
+        text-align: center;
+        h1 {
+            font-size: 58px;
+            font-family:  'Roboto Condensed', sans-serif;
+            font-weight: 900;
+            color: #fff;
+            text-shadow: 2px 2px 0 rgba(0,0,0,0.3);
+        }
+        h4 {
+            padding-top: 10px;
+            font-family:  'Roboto Condensed', sans-serif;
+            color: #fff;
+            font-size: 20px;
+            font-weight: lighter;
+            text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+        }
+    }
+
 }
