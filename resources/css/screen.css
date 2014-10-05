@@ -216,65 +216,49 @@
     width: 100%;
   }
 }
-/* line 3, ../scss/_header.scss */
+/* line 7, ../scss/_header.scss */
 .pg-hdr {
   width: 100%;
-  height: 80%;
+  height: 90%;
   background: url("../images/hdr-bg-4.jpg");
   background-position: center;
   background-size: cover;
 }
-/* line 9, ../scss/_header.scss */
+/* line 13, ../scss/_header.scss */
 .pg-hdr .pg-hdr-tint {
   height: 100%;
   width: 100%;
   background-color: rgba(81, 104, 139, 0.6);
 }
 
-/* line 15, ../scss/_header.scss */
+/* line 19, ../scss/_header.scss */
 .pg-hdr-menu {
-  position: absolute;
-  top: 50%;
-  left: 45%;
-  height: 50px;
-}
-/* line 21, ../scss/_header.scss */
-.pg-hdr-menu ul {
-  list-style-tyoe: none;
+  position: relative;
+  top: 75%;
+  text-align: center;
 }
 /* line 23, ../scss/_header.scss */
-.pg-hdr-menu ul li {
-  float: left;
-  padding: 10px;
-  margin-right: 50px;
-  color: #fff;
+.pg-hdr-menu a {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
   border-radius: 2px;
   background-color: #fd6ca3;
-}
-/* line 30, ../scss/_header.scss */
-.pg-hdr-menu ul li a {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   word-spacing: 5px;
-}
-/* line 36, ../scss/_header.scss */
-.pg-hdr-menu ul li li:hover {
-  background-color: #fd5393;
-  cursor: pointer;
+  padding: 10px;
 }
 
-/* line 43, ../scss/_header.scss */
+/* line 33, ../scss/_header.scss */
 .pg-hdr-abt {
   position: relative;
   top: 40%;
   text-align: center;
 }
-/* line 47, ../scss/_header.scss */
+/* line 37, ../scss/_header.scss */
 .pg-hdr-abt h1 {
   font-size: 58px;
   font-family: 'Roboto Condensed', sans-serif;
@@ -282,7 +266,7 @@
   color: #fff;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
 }
-/* line 54, ../scss/_header.scss */
+/* line 44, ../scss/_header.scss */
 .pg-hdr-abt h4 {
   padding-top: 10px;
   font-family: 'Roboto Condensed', sans-serif;
@@ -292,66 +276,30 @@
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 }
 
-@media screen and (max-width: 320px) {
-  /* line 65, ../scss/_header.scss */
+@media screen and (max-width: 450px) {
+  /* line 55, ../scss/_header.scss */
   .pg-hdr-menu {
-    position: absolute;
-    top: 00%;
-    left: 45%;
-    height: 50px;
+    top: 80%;
   }
-  /* line 71, ../scss/_header.scss */
-  .pg-hdr-menu ul {
-    list-style-tyoe: none;
-  }
-  /* line 73, ../scss/_header.scss */
-  .pg-hdr-menu ul li {
-    float: left;
-    padding: 10px;
-    margin-right: 50px;
-    color: #fff;
+  /* line 57, ../scss/_header.scss */
+  .pg-hdr-menu a {
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
     border-radius: 2px;
     background-color: #fd6ca3;
-  }
-  /* line 80, ../scss/_header.scss */
-  .pg-hdr-menu ul li a {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     word-spacing: 5px;
-  }
-  /* line 86, ../scss/_header.scss */
-  .pg-hdr-menu ul li li:hover {
-    background-color: #fd5393;
-    cursor: pointer;
+    padding: 10px;
   }
 
-  /* line 93, ../scss/_header.scss */
+  /* line 68, ../scss/_header.scss */
   .pg-hdr-abt {
-    position: relative;
-    top: 40%;
-    text-align: center;
-  }
-  /* line 97, ../scss/_header.scss */
-  .pg-hdr-abt h1 {
-    font-size: 58px;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 900;
-    color: #fff;
-    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
-  }
-  /* line 104, ../scss/_header.scss */
-  .pg-hdr-abt h4 {
-    padding-top: 10px;
-    font-family: 'Roboto Condensed', sans-serif;
-    color: #fff;
-    font-size: 20px;
-    font-weight: lighter;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+    padding: 0 40px;
+    top: 30%;
   }
 }
 /* line 3, ../scss/_pg-wrapper.scss */
@@ -364,28 +312,30 @@
   padding: 0 20px;
 }
 
-/* line 4, ../scss/_pg-content.scss */
+/* line 5, ../scss/_pg-content.scss */
 .pg-work-content {
   width: 100%;
   height: auto;
 }
-/* line 7, ../scss/_pg-content.scss */
+/* line 8, ../scss/_pg-content.scss */
 .pg-work-content label {
-  font-size: 48px;
+  font-size: 32px;
   text-align: center;
   display: block;
   color: #333;
   padding: 50px 0;
 }
 
-/* line 19, ../scss/_pg-content.scss */
+/*---- Project-one content ----*/
+/* line 21, ../scss/_pg-content.scss */
 .project-one {
   width: 100%;
   height: 200px;
   margin-bottom: 50px;
   padding-right: 25px;
+  overflow: hidden;
 }
-/* line 24, ../scss/_pg-content.scss */
+/* line 27, ../scss/_pg-content.scss */
 .project-one a {
   height: 100%;
   width: 100%;
@@ -400,59 +350,61 @@
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-/* line 34, ../scss/_pg-content.scss */
+/* line 37, ../scss/_pg-content.scss */
 .project-one a:after {
   content: 'Loading Spinners';
   position: absolute;
   display: block;
   height: 100%;
   width: 100%;
-  bottom: 0;
+  bottom: -200px;
   left: 0;
   background-color: rgba(17, 17, 17, 0.2);
   color: #fff;
+  opacity: 0.1;
   text-align: center;
   line-height: 50px;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  visibility: hidden;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
   text-transform: uppercase;
 }
-/* line 50, ../scss/_pg-content.scss */
-.project-one a:hover {
-  transform: translateY(-5px);
-}
-/* line 53, ../scss/_pg-content.scss */
+/* line 58, ../scss/_pg-content.scss */
 .project-one a:hover:after {
+  opacity: 1;
+  visibility: visible;
   height: 100%;
+  bottom: 0px;
   line-height: 200px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+/*---- //Project-one content ----*/
 @media screen and (max-width: 768px) {
-  /* line 61, ../scss/_pg-content.scss */
+  /* line 72, ../scss/_pg-content.scss */
   .project-one {
     width: 100%;
     padding-right: 0;
     display: block;
   }
 
-  /* line 66, ../scss/_pg-content.scss */
+  /* line 77, ../scss/_pg-content.scss */
   .project-two {
     width: 100%;
     padding-left: 0;
     display: block;
   }
 
-  /* line 71, ../scss/_pg-content.scss */
+  /* line 82, ../scss/_pg-content.scss */
   .project-three {
     width: 100%;
     padding-right: 0;
     display: block;
   }
 
-  /* line 76, ../scss/_pg-content.scss */
+  /* line 87, ../scss/_pg-content.scss */
   .project-four {
     width: 100%;
     padding-left: 0;
@@ -460,7 +412,7 @@
   }
 }
 @media screen and (max-width: 328px) {
-  /* line 85, ../scss/_pg-content.scss */
+  /* line 96, ../scss/_pg-content.scss */
   .project-one {
     width: 100%;
     padding-right: 0;
